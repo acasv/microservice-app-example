@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Publish over ssh plugin in pipeline') {
+        stage('Deploying Changes') {
                 steps{
                         sshPublisher(
                             publishers: [
