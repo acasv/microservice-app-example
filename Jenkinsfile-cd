@@ -5,7 +5,8 @@ pipeline {
                 steps{
                         sshPublisher(
                             publishers: [
-                                sshPublisherDesc( 
+                                sshPublisherDesc(
+                                    configName: "Frontend", 
                                     transfers: [
                                         sshTransfer( 
                                             execCommand: 'cd microservice-app-example/ ; sudo git pull'
