@@ -6,12 +6,12 @@ pipeline {
                         sshPublisher(
                             publishers: [
                                 sshPublisherDesc(
-                                    configName: Frontend, 
+                                    configName: 3.91.55.38, 
                                     transfers: [
                                         sshTransfer(
                                             cleanRemote: false, 
                                             excludes: '', 
-                                            execCommand: 'cd microservice-app-example/ ; sudo git pull',
+                                            execCommand: 'cd microservice-app-example/ ; sudo git pull'
                                         )
                                     ]
                                 )
