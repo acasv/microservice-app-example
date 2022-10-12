@@ -8,9 +8,7 @@ pipeline {
                                 sshPublisherDesc(
                                     configName: 3.91.55.38, 
                                     transfers: [
-                                        sshTransfer(
-                                            cleanRemote: false, 
-                                            excludes: '', 
+                                        sshTransfer( 
                                             execCommand: 'cd microservice-app-example/ ; sudo git pull'
                                         )
                                     ]
