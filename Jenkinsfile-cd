@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage('Publish over ssh plugin in pipeline') {
-                script {
+                
                         sshPublisher(
                             publishers: [
                                 sshPublisherDesc(
@@ -20,5 +20,4 @@ pipeline {
                     }
                 }
             }
-        } 
 
