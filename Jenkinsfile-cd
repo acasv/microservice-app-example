@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage('Deploying') {
+            steps {
+                echo 'Succesfully Deployed'
+            }
+        }
+    }
+}
